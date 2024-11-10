@@ -156,8 +156,94 @@ section{
 
 .social a:hover{
     transform: scale(1.2);
-    background-color: rgba(247, 4, 4, 0.200);
+    background-color: rgba(255, 0, 0, 0.200);
 
+}
+
+.btn-cv{
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background: var(--main-color);
+    color: var(--second-text-color);
+    border-radius: 4rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    transition: 0.3s ease;
+    cursor: pointer;
+    border: 2px solid transparent;
+
+}
+
+.btn-cv:hover{
+   
+    background: white;
+    color: red;
+    border: 2px solid red;
+    
+   
+    
+}
+
+.about{
+    background: var(--second-bg-color);
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+    text-align: center;
+    font-size: 2rem;
+
+}
+
+.about p{
+    
+    color: var(--second-text-color);
+}
+
+.competences{
+    background: var(--bg-color);
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.competences p{
+    
+    color: var(--main-text-color);
+}
+
+.projets{
+    background: var(--second-bg-color);
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+    text-align: center;
+    font-size: 2rem;
+
+}
+
+.projets p{
+    
+    color: var(--second-text-color);
+}
+
+.contact{
+    background: var(--bg-color);
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.contact p{
+    
+    color: var(--main-text-color);
 }
 
 
