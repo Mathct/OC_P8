@@ -198,6 +198,17 @@ section{
 .about p{
     
     color: var(--second-text-color);
+    text-align: justify;
+    margin-bottom: 50px;
+}
+
+.about span{
+    
+    color: red;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+    
 }
 
 .competences{

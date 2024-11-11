@@ -1,0 +1,31 @@
+{
+    "FrontEnd": [
+    {
+        "id": 1,
+        "nom": "HTML",
+        "niveau": 50,
+        "icon": "<i class='bx bxl-html5'></i>"
+    },
+    {
+        "id": 1,
+        "nom": "CSS",
+        "niveau": 50,
+        "icon": "<i class='bx bxl-css3' ></i>"
+    }
+    
+],
+    "Backend": [
+    {
+        "id": 1,
+        "nom": "PHP",
+        "niveau": 50,
+        "icon": "<i class='bx bxl-php' ></i>"
+    },
+    {
+        "id": 2,
+        "nom": "MYSQL",
+        "niveau": 50,
+        "icon": "<i class='bx bxl-php' ></i>"
+    }
+]
+}
