@@ -1,31 +1,69 @@
 {
-    "FrontEnd": [
+    "Frontend": [
     {
         "id": 1,
         "nom": "HTML",
-        "niveau": 50,
-        "icon": "<i class='bx bxl-html5'></i>"
+        "niveau": 95,
+        "icon": "<i class='bx bxl-html5'></i>",
+        "color": "#c95d2e"
     },
     {
-        "id": 1,
+        "id": 2,
         "nom": "CSS",
-        "niveau": 50,
-        "icon": "<i class='bx bxl-css3' ></i>"
+        "niveau": 95,
+        "icon": "<i class='bx bxl-css3' ></i>",
+        "color": "#147bbc"
+    },
+    {
+        "id": 3,
+        "nom": "Javascrit",
+        "niveau": 95,
+        "icon": "<i class='bx bxl-javascript'></i>",
+        "color": "#f8db1d"
+    },
+    {
+        "id": 4,
+        "nom": "React",
+        "niveau": 70,
+        "icon": "<i class='bx bxl-react' ></i>",
+        "color": "#61dbfb"
     }
     
+
 ],
     "Backend": [
     {
         "id": 1,
         "nom": "PHP",
-        "niveau": 50,
-        "icon": "<i class='bx bxl-php' ></i>"
+        "niveau": 95,
+        "icon": "<i class='fa-brands fa-php'></i>",
+        "color": "#8A2BE2"
     },
+
     {
         "id": 2,
+        "nom": "Node",
+        "niveau": 75,
+        "icon": "<i class='bx bxl-nodejs' ></i>",
+        "color": "#083B32"
+    },
+
+    {
+        "id": 3,
         "nom": "MYSQL",
-        "niveau": 50,
-        "icon": "<i class='bx bxl-php' ></i>"
+        "niveau": 95,
+        "icon": "<i class='bx bxl-postgresql'></i>",
+        "color": "#4169E1"
+    },
+
+    {
+        "id": 4,
+        "nom": "Mongo",
+        "niveau": 70,
+        "icon": "<i class='bx bxl-mongodb'></i>",
+        "color": "#90EE90"
     }
+
+   
 ]
 }
