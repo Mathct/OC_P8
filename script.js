@@ -17,7 +17,7 @@ fetchSkills().then(data => {
     /// Skills Frontend /////
     for (let i = 0; i < data["Frontend"].length; i++) {
     
-    const parent = document.getElementById("skills");
+    const parent = document.getElementById("linearskills");
 
     const newDiv = document.createElement("div");
     newDiv.id = "front_"+data["Frontend"][i].id;
@@ -55,7 +55,7 @@ fetchSkills().then(data => {
     
     for (let i = 0; i < data["Backend"].length; i++) {
 
-        const parent = document.getElementById("skills");
+        const parent = document.getElementById("linearskills");
         const newDiv = document.createElement("div");
         newDiv.id = "back_"+data["Backend"][i].id;
         newDiv.innerHTML = `${data["Backend"][i].icon}`;
@@ -86,5 +86,11 @@ fetchSkills().then(data => {
    
     
     }
+
+    /// Skills Radial /////
+
+    
+
+    
 
 });

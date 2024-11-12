@@ -214,11 +214,17 @@ section{
 .skills{
     background: var(--bg-color);
     display: flex;
-    /*align-items: center;*/
-    justify-content:center;
-    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
     font-size: 2rem;
+    
 }
+
+.linearskills{
+    width: 45%;
+}
+
+
 
 .skills p{
     
@@ -234,7 +240,7 @@ section{
 .progressline{
     position: relative;
     border-radius: 10px;
-    width: 50%;
+    width: 100%;
     height: 10px;
     background-color: rgba(0, 0, 0, 0.2);
     margin-bottom: 20px;
@@ -265,10 +271,82 @@ section{
     font-size: 2rem;
     font-weight: 700;
     margin-bottom: 30px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*border: 1px solid black;
+    border-radius: 10px;
+    color: white;
+    background-color: black;*/
+
     
     
     
 }
+
+.radialskills {
+    width: 45%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+  }
+  .progress {
+    width: 250px;
+    height: 250px;
+    border-radius: 5mm;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  circle {
+    fill: none;
+  }
+  svg {
+    transform: rotate(-90deg);
+  }
+  circle:nth-child(1) {
+    stroke: rgba(25, 26, 49, 0.411);
+    stroke-width: 10px;
+  }
+  circle:nth-child(2) {
+    stroke: rgb(255, 0, 0);
+    stroke-dasharray: 628;
+    stroke-dashoffset: calc(628 - (628 * 75) / 100);
+    stroke-linecap: round;
+    stroke-width: 10px;
+    animation: progress 1s ease;
+  }
+  @keyframes progress {
+    from {
+      stroke-dashoffset: 628;
+    }
+  }
+  .text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: poppins;
+    font-size: 40px;
+    color: rgb(255, 201, 5);
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .text span {
+    font-size: 14px;
+    color: rgb(230, 230, 230);
+  }
+
+
+
 
 .valeur{
     position: absolute;
@@ -282,7 +360,6 @@ section{
     align-items: center;
     font-weight: 600;
 }
-
 
 
 
@@ -323,7 +400,7 @@ section{
     color: var(--second-text-color);
     height: 50px;
     font-size: 1.7rem;
-    font-weight: 700;
+    font-weight: 600;
     display: flex;
     justify-content: center;
     align-items: center;
