@@ -65,5 +65,37 @@
     }
 
    
+],
+
+"Radial": [
+    {
+        "id": 1,
+        "nom": "SEO",
+        "niveau": 75,
+        "color": "#47a3d8"
+    },
+
+    {
+        "id": 2,
+        "nom": "Agile",
+        "niveau": 70,
+        "color": "#f3b805"
+    },
+
+    {
+        "id": 3,
+        "nom": "Figma",
+        "niveau": 65,
+        "color": "#04840d"
+    },
+
+    {
+        "id": 4,
+        "nom": "GitHub",
+        "niveau": 95,
+        "color": "#404340"
+    }
+
+       
 ]
 }

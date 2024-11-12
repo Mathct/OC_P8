@@ -26,7 +26,7 @@
         <nav class="navbar">
             <a href="#home" class="active">Accueil</a>
             <a href="#about">À propos</a>
-            <a href="#skills">Compétences</a>
+            <a href="#myskills">Compétences</a>
             <a href="#projets">Projets</a>
             <a href="#contact">Contact</a>
         </nav>
@@ -84,62 +84,14 @@
 
 
         
-        <section id="skills" class="skills">
+        <section id="myskills" class="myskills">
 
-            <div id= "linearskills" class="linearskills">
+           
 
-
-            </div>       
-
-            <div id="radialskills" class="radialskills">
-
-                <div class="progress">
-                  <svg class="progress-bar" width="250" height="250">
-                    <circle class="progress-circle" cx="125" cy="125" r="100"></circle>
-                    <circle class="progress-circle" cx="125" cy="125" r="100"></circle>
-                  </svg>
-                  <div class="text">
-                    75%
-                    <span>Completed</span>
-                  </div>
+                <div id="skills" class="skills">
+                    <div id= "linearskills" class="linearskills"></div>       
+                    <div id="radialskills" class="radialskills"></div>
                 </div>
-
-                <div class="progress">
-                    <svg class="progress-bar" width="250" height="250">
-                      <circle class="progress-circle" cx="125" cy="125" r="100"></circle>
-                      <circle class="progress-circle" cx="125" cy="125" r="100"></circle>
-                    </svg>
-                    <div class="text">
-                      75%
-                      <span>Completed</span>
-                    </div>
-                  </div>
-
-                  <div class="progress">
-                    <svg class="progress-bar" width="250" height="250">
-                      <circle class="progress-circle" cx="125" cy="125" r="100"></circle>
-                      <circle class="progress-circle" cx="125" cy="125" r="100"></circle>
-                    </svg>
-                    <div class="text">
-                      75%
-                      <span>Completed</span>
-                    </div>
-                  </div>
-
-                  <div class="progress">
-                    <svg class="progress-bar" width="250" height="250">
-                      <circle class="progress-circle" cx="125" cy="125" r="100"></circle>
-                      <circle class="progress-circle" cx="125" cy="125" r="100"></circle>
-                    </svg>
-                    <div class="text">
-                      75%
-                      <span>Completed</span>
-                    </div>
-
-                  </div>
-
-                  
-            </div>
 
         </section>
 
@@ -154,8 +106,16 @@
 
         <section id= "contact" class="contact">
 
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis consectetur officia ipsum quia commodi architecto quis quasi voluptatem, voluptates quo ullam harum repudiandae aut animi, aliquid possimus veritatis nulla numquam.</p>
             
+            <form action="https://formspree.io/f/mzzbgvlr" method="post" onsubmit="return validateForm()">
+                <label for="email">Votre Email :</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="message">Votre Message :</label><br>
+                <textarea id="message" name="message" rows="10" cols="70" required></textarea><br><br>
+                <div class="button-container">
+                    <button type="submit" class="btn">Envoyer</button>
+                </div>
+            </form>
         
         </section>
 

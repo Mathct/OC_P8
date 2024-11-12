@@ -89,8 +89,46 @@ fetchSkills().then(data => {
 
     /// Skills Radial /////
 
-    
+    for (let i = 0; i < data["Radial"].length; i++) {
 
+        const parent = document.getElementById("radialskills");
+        const newDiv = document.createElement("div");
+        newDiv.id = "radial_"+data["Radial"][i].id;
+        newDiv.className = "progress";
+        newDiv.innerHTML = 
+                `<svg class="progress-bar" width="250" height="250">
+                    <circle id="circle_1_${i}" class="progress-circle circle1" cx="125" cy="125" r="100"></circle>
+                    <circle id="circle_2_${i}" class="progress-circle circle2" cx="125" cy="125" r="100"></circle>
+                </svg>
+                <div class="text" style="color: ${data["Radial"][i].color};">
+                ${data["Radial"][i].nom}
+                    <span style="color: ${data["Radial"][i].color};">${data["Radial"][i].niveau}%</span>
+                </div>`;
+
+        parent.appendChild(newDiv);
+
+        const circle = document.getElementById("circle_2_"+i);
+        circle.style.stroke = data["Radial"][i].color;
+        circle.style.strokeDashoffset = 628 - (628 * data["Radial"][i].niveau) / 100;
+     
     
+    }
+   
 
 });
+
+
+
+const validateForm = () => {
+    const email = document.getElementById('email').value;
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    
+    
+    if (!emailPattern.test(email)) {
+        alert('Veuillez entrer une adresse email valide.');
+        return false;
+    }
+
+
+    return true;
+};
