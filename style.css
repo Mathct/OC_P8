@@ -92,6 +92,9 @@ section{
     padding: 10rem 9% 10rem;
 }
 
+
+/* HOME*/
+
 .home{
     display: flex;
     justify-content: center;
@@ -184,6 +187,8 @@ section{
     
 }
 
+/* ABOUT*/
+
 .about{
     background: var(--second-bg-color);
     display: flex;
@@ -208,8 +213,16 @@ section{
     font-size: 2rem;
     font-weight: 700;
     margin-bottom: 30px;
+    margin-top: 20px;
     
 }
+
+
+
+
+
+/* COMPETENCES*/
+
 
 .skills{
     background: var(--bg-color);
@@ -223,7 +236,6 @@ section{
 .linearskills{
     width: 45%;
 }
-
 
 
 .skills p{
@@ -263,7 +275,6 @@ section{
     transform-origin: left;
    
 }
-
 
 .radialskills {
     width: 45%;
@@ -311,7 +322,6 @@ section{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-family: poppins;
     font-size: 40px;
     font-weight: 500;
     display: flex;
@@ -323,9 +333,6 @@ section{
     font-size: 16px;
     color: red;
   }
-
-
-
 
 .valeur{
     position: absolute;
@@ -340,7 +347,22 @@ section{
     font-weight: 600;
 }
 
+.titreskill{
+    position: absolute;
+    width: 100px;
+    height: 20px !important;
+    right: 0;
+    top: -40px;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-weight: 600;
+}
 
+
+
+/* PROJETS*/
 
 
 .projets{
@@ -359,6 +381,17 @@ section{
     color: var(--second-text-color);
 }
 
+
+
+
+
+
+
+
+
+/* CONTACT*/
+
+
 .contact{
     background: var(--bg-color);
     display: flex;
@@ -373,25 +406,6 @@ section{
     
     color: var(--main-text-color);
 }
-
-#footer{
-    background: var(--second-bg-color);
-    color: var(--second-text-color);
-    height: 50px;
-    font-size: 1.7rem;
-    font-weight: 600;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-
-
-
-
-
-
 
 
 form {
@@ -410,11 +424,13 @@ input[type="email"], input[type="text"], textarea {
     padding: 10px;
     margin: 10px 0 20px 0;
     font-size: 1.2rem;
-    border: 1px solid red;
+    border: 2px solid red;
     border-radius: 10px;
     background-color: rgba(255, 0, 0, 0.05);
     
+    
 }
+
 
 #email {
     text-align: center;
@@ -429,6 +445,12 @@ input[type="email"], input[type="text"], textarea {
 }
 
 #prenom {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#sujet {
     text-align: center;
     font-size: 16px;
     font-weight: 600;
@@ -469,8 +491,45 @@ button:hover{
     
 }
 
+/* FOOTER*/
+#footer{
+    background: var(--second-bg-color);
+    color: var(--second-text-color);
+    height: 50px;
+    font-size: 1.7rem;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 
+
+@media(max-width:890px){
+
+    #menu-icon{
+        display: block;
+    }
+
+    .navbar{
+        position: absolute;
+        top: 100%;
+        right: 0px;
+        width: 200px;
+        background: black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /*display: none;*/
+        
+    }
+
+    .navbar a {
+        margin-left: 0;
+    }
+
+
+}
 
 
 

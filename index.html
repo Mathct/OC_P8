@@ -108,18 +108,27 @@
 
             
             <form action="https://formspree.io/f/mzzbgvlr" method="post" onsubmit="return validateForm()">
-                <label for="nom">Nom :</label><br>
-                <input type="text" id="nom" name="nom" required><br>
-                <label for="prenom">Prénom :</label><br>
-                <input type="text" id="prenom" name="prenom" required><br>
-                <label for="email">Email :</label><br>
-                <input type="email" id="email" name="email" required><br>
-                <label for="message">Votre Message :</label><br>
-                <textarea id="message" name="message" rows="10" cols="70" required></textarea><br><br>
+                
+                <input type="text" placeholder="Nom" id="nom" name="nom" required><br>
+                
+                <input type="text" placeholder="Prénom" id="prenom" name="prenom" required><br>
+                
+                <input type="email" placeholder="Email" id="email" name="email" required><br>
+
+                <input type="text" placeholder="Sujet" id="sujet" name="sujet" required><br>
+                
+                <textarea placeholder="Votre message" id="message" name="message" rows="10" cols="70" required></textarea><br><br>
                 <div class="button-container">
                     <button type="submit" class="btn">Envoyer</button>
                 </div>
             </form>
+
+            <div class="social">
+                <a href="#"><i class='bx bxl-linkedin-square'></i></a>
+                <a href="#"><i class='bx bxl-github'></i></a>
+                <a href="#"><i class='bx bxl-facebook-square' ></i></a>
+                <a href="#"><i class='bx bxl-twitter'></i></a>
+            </div>
         
         </section>
 

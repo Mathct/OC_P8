@@ -2,14 +2,14 @@
     "Frontend": [
     {
         "id": 1,
-        "nom": "HTML",
+        "nom": "HTML 5",
         "niveau": 95,
         "icon": "<i class='bx bxl-html5'></i>",
         "color": "#c95d2e"
     },
     {
         "id": 2,
-        "nom": "CSS",
+        "nom": "CSS 3",
         "niveau": 95,
         "icon": "<i class='bx bxl-css3' ></i>",
         "color": "#147bbc"
@@ -34,7 +34,7 @@
     "Backend": [
     {
         "id": 1,
-        "nom": "PHP",
+        "nom": "PHP 8.2",
         "niveau": 95,
         "icon": "<i class='fa-brands fa-php'></i>",
         "color": "#8A2BE2"
@@ -42,7 +42,7 @@
 
     {
         "id": 2,
-        "nom": "Node",
+        "nom": "Node JS",
         "niveau": 75,
         "icon": "<i class='bx bxl-nodejs' ></i>",
         "color": "#083B32"
@@ -50,7 +50,7 @@
 
     {
         "id": 3,
-        "nom": "MYSQL",
+        "nom": "MYSQL 5.7",
         "niveau": 95,
         "icon": "<i class='bx bxl-postgresql'></i>",
         "color": "#4169E1"

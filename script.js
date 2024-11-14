@@ -1,4 +1,4 @@
-///Récupation des skills
+///Récupation et affichage des skills
 
 async function fetchSkills() {
     try {
@@ -46,6 +46,13 @@ fetchSkills().then(data => {
     newDiv2.style.color = data["Frontend"][i].color;
     parent2.appendChild(newDiv2);
 
+    const newDiv3= document.createElement("span");
+    newDiv3.id = "namefront_"+data["Frontend"][i].id;
+    newDiv3.className = "titreskill";
+    newDiv3.innerText = data["Frontend"][i].nom;
+    newDiv3.style.color = data["Frontend"][i].color;
+    parent2.appendChild(newDiv3);
+
 
 
     }
@@ -82,6 +89,13 @@ fetchSkills().then(data => {
         newDiv2.innerText = data["Backend"][i].niveau+"%";
         newDiv2.style.color = data["Backend"][i].color;
         parent2.appendChild(newDiv2);
+
+        const newDiv3= document.createElement("span");
+        newDiv3.id = "namefront_"+data["Backend"][i].id;
+        newDiv3.className = "titreskill";
+        newDiv3.innerText = data["Backend"][i].nom;
+        newDiv3.style.color = data["Backend"][i].color;
+        parent2.appendChild(newDiv3);
     
    
     
@@ -118,6 +132,11 @@ fetchSkills().then(data => {
 });
 
 
+///Récupation et affichage des projets
+
+
+
+///Formulaire
 
 const validateForm = () => {
     const email = document.getElementById('email').value;
@@ -132,3 +151,35 @@ const validateForm = () => {
 
     return true;
 };
+
+
+/// NAV BAR
+
+
+let menuicon = document.querySelector('#menu-icon');
+let navbar = document.querySelector('.navbar');
+let sections = document.querySelectorAll('section');
+let navlinks = document.querySelectorAll('header nav a');
+
+window.onscroll = () => {
+    sections.forEach(sec => {
+        let top = window.scrollY;
+        let offset = sec.offsetTop -150;
+        let height = sec.offsetHeight;
+        let id = sec.getAttribute('id');
+
+        if(top >= offset && top < offset + height)
+        {
+            navlinks.forEach(links => {
+                links.classList.remove('active');
+                document.querySelector('header nav a[href*=' + id + ']').classList.add('active');
+            })
+        }
+    })
+
+}
+
+
+
+
+
