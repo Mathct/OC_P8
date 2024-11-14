@@ -399,16 +399,36 @@ margin-top: 170px;
 
 .projet {
     background-color: rgb(255, 255, 255);
-    border: 1px solid red;
     height: 300px; 
     width: 100%; 
     border-radius: 20px;
     cursor: pointer;
     transition: 0.3s ease;
+    overflow: hidden; 
+    position: relative;
 }
 
 .projet:hover{
     transform: scale(1.1);
+}
+
+.projet img{
+    width: 100%; 
+    height: auto; 
+    object-fit: cover; 
+    
+}
+
+.projet-text{
+    position: absolute;
+    font-size: 50px;
+    top: 50%; /* Positionne au centre verticalement */
+    left: 50%; /* Positionne au centre horizontalement */
+    transform: translate(-50%, -50%); /* Ramène l'élément pour qu'il soit réellement centré */
+    
+    
+    
+    
 }
 
 
