@@ -225,7 +225,7 @@ margin-top: 170px;
     font-size: 2rem;
     font-weight: 700;
     margin-bottom: 30px;
-    margin-top: 20px;
+    margin-top: 50px;
     
 }
 
@@ -242,7 +242,7 @@ margin-top: 170px;
     align-items: center;
     justify-content: space-around;
     font-size: 2rem;
-    margin-top: 20px;
+    margin-top: 50px;
 }
 
 .linearskills{
@@ -271,6 +271,7 @@ margin-top: 170px;
     animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
     transform: scaleX(0);
     transform-origin: left;
+    
 }
 
 @keyframes animate{
@@ -379,10 +380,6 @@ margin-top: 170px;
 
 .projets{
     background: var(--second-bg-color);
-    display: flex;
-    align-items: center;
-    justify-content:center;
-    flex-direction: column;
     text-align: center;
     font-size: 2rem;
 
@@ -393,7 +390,26 @@ margin-top: 170px;
     color: var(--second-text-color);
 }
 
+#projets-content {
+    margin-top: 50px;
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    gap: 40px; 
+}
 
+.projet {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid red;
+    height: 300px; 
+    width: 100%; 
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.projet:hover{
+    transform: scale(1.1);
+}
 
 
 
@@ -422,7 +438,9 @@ margin-top: 170px;
 
 form {
     width: 800px;
-     padding: 20px;
+    padding: 20px;
+    margin-top: 20px;
+    
     
 }
 
@@ -441,6 +459,19 @@ input[type="email"], input[type="text"], textarea {
     background-color: rgba(255, 0, 0, 0.05);
     
     
+}
+
+#contacter{
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    
+}
+
+#contacter span{
+    font-size: 30px;
+    font-weight: 600;
+    color: red;
 }
 
 
@@ -469,6 +500,7 @@ input[type="email"], input[type="text"], textarea {
 }
 
 #message {
+    text-align: center;
     font-size: 16px;
     font-weight: 600;
 }
