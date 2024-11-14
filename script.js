@@ -160,6 +160,7 @@ let menuicon = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
 let sections = document.querySelectorAll('section');
 let navlinks = document.querySelectorAll('header nav a');
+let decal = document.querySelectorAll('.first');
 
 window.onscroll = () => {
     sections.forEach(sec => {
@@ -178,6 +179,29 @@ window.onscroll = () => {
     })
 
 }
+
+
+const toggleMenu = () => {
+    navbar.classList.toggle('show');
+    menuicon.classList.toggle('red');
+    decal.forEach(element => {
+        element.classList.toggle('decal');
+    });
+    
+};
+
+menuicon.addEventListener('click', toggleMenu);
+
+
+
+// Pour masquer le menu quand un lien est cliqué
+navlinks.forEach(link => {
+    link.addEventListener('click', () => {
+        if (navbar.classList.contains('show')) {
+            toggleMenu(); 
+        }
+    });
+});
 
 
 
