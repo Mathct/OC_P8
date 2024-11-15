@@ -399,39 +399,81 @@ margin-top: 170px;
 
 .projet {
     background-color: rgb(255, 255, 255);
-    height: 300px; 
-    width: 100%; 
-    border-radius: 20px;
-    cursor: pointer;
-    transition: 0.3s ease;
-    overflow: hidden; 
+    height: 300px;
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
     position: relative;
+    }
+
+.projet:hover {
+    border: 2px solid white;
 }
 
-.projet:hover{
-    transform: scale(1.1);
+
+.projet img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s ease;
 }
 
-.projet img{
-    width: 100%; 
-    height: auto; 
-    object-fit: cover; 
-    
+.projet:hover img {
+    transform: scale(1.2);
 }
 
-.projet-text{
+.projet-layer {
     position: absolute;
-    font-size: 50px;
-    top: 50%; /* Positionne au centre verticalement */
-    left: 50%; /* Positionne au centre horizontalement */
-    transform: translate(-50%, -50%); /* Ramène l'élément pour qu'il soit réellement centré */
-    
-    
-    
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), red);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    transform: translateY(100%);
+    transition: 0.3s ease;
     
 }
 
 
+.projet:hover .projet-layer {
+    transform: translateY(0);
+}
+
+.projet-layer h1{
+    font-size: 4rem;
+    color: rgb(255, 255, 255);
+    
+}
+
+.projet-layer p{
+    
+    font-weight: 600;
+   
+}
+
+.projet-layer a{
+    color: red;
+    height: 4rem;
+    width: 4rem;
+    margin-top: 10px;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+
+.projet-layer i{
+    font-size: 2rem;
+}
 
 
 
