@@ -456,7 +456,7 @@ margin-top: 170px;
    
 }
 
-.projet-layer a{
+.projet-layer i{
     color: red;
     height: 4rem;
     width: 4rem;
@@ -468,14 +468,8 @@ margin-top: 170px;
     justify-content: center;
     align-items: center;
     margin-bottom: 15px;
-}
-
-
-.projet-layer i{
     font-size: 2rem;
 }
-
-
 
 
 

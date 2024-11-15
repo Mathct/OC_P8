@@ -159,7 +159,7 @@ fetchProjets().then(data => {
         <div class="projet-layer">
         <h1>${data["Projets"][i].nom}</h1>
         <p>${data["Projets"][i].description}</p>
-        <a href="#"><i class='bx bx-link-external'></i></a>
+        <i id='btn_projet_${i}' class='bx bx-link-external'></i>
         </div>`;
     parent.appendChild(newDiv);
 
@@ -169,14 +169,6 @@ fetchProjets().then(data => {
 
 
 });
-
-
-
-
-
-
-
-
 
 
 
