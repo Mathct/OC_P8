@@ -133,42 +133,58 @@ fetchSkills().then(data => {
 
 
 
-///Récupation et affichage des projets
+// Variable pour stocker les projets
+let projetsData = [];
 
+/// Récupération et affichage des projets
 async function fetchProjets() {
     try {
         const reponse = await fetch('data/projets.json');
-        const projets = await reponse.json(); 
-        return projets
+        const projets = await reponse.json();
+        // je stocke les projets dans projetsData
+        projetsData = projets["Projets"];
+        return projetsData;
     } catch (error) {
         console.error('Erreur de récupération JSON:', error);
-        return []; 
+        return [];
     }
 }
 
 fetchProjets().then(data => {
-    
-    for (let i = 0; i < data["Projets"].length; i++) {
-
     const parent = document.getElementById("projets-content");
-    const newDiv = document.createElement("div");
-    newDiv.id = "projet_"+data["Projets"][i].id;
-    newDiv.className = "projet";
-    newDiv.innerHTML = 
-        `<img src="${data["Projets"][i].img}" alt="${data["Projets"][i].alt}">
-        <div class="projet-layer">
-        <h1>${data["Projets"][i].nom}</h1>
-        <p>${data["Projets"][i].description}</p>
-        <i id='btn_projet_${i}' class='bx bx-link-external'></i>
-        </div>`;
-    parent.appendChild(newDiv);
 
-    
+    for (let i = 0; i < data.length; i++) {
+        const newDiv = document.createElement("div");
+        newDiv.id = "projet_" + data[i].id;
+        newDiv.className = "projet";
+        newDiv.innerHTML = 
+            `<img src="${data[i].img}" alt="${data[i].alt}">
+            <div class="projet-layer">
+                <h1>${data[i].nom}</h1>
+                <p>${data[i].description}</p>
+                <i id="btn_projet_${data[i].id}" class="bx bx-link-external"></i>
+            </div>`;
+        parent.appendChild(newDiv);
 
+        // EventListener sur chaque bouton projet
+        const projetopen = document.querySelector(`#btn_projet_${data[i].id}`);
+        projetopen.addEventListener('click', openProjet);
     }
-
-
 });
+
+// Fonction pour ouvrir les projets et récupérer les informations... puis les injecter dans une modale
+const openProjet = (event) => {
+    
+    const clickedId = event.target.id.replace("btn_projet_", "");
+    const projet = projetsData.find(projet => projet.id == clickedId);
+    
+    // Afficher l'id
+    console.log('Nom du projet :', projet.id);
+   
+    
+};  
+
+
 
 
 
