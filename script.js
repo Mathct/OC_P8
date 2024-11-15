@@ -179,9 +179,12 @@ const openProjet = (event) => {
     
     const clickedId = event.target.id.replace("btn_projet_", "");
     const projet = projetsData.find(projet => projet.id == clickedId);
+
+    const modal = document.getElementById("modal");
+    modal.classList.remove('hidden');
     
     // Afficher l'id
-    console.log('Nom du projet :', projet.id);
+    //console.log('Nom du projet :', projet.id);
    
     
 };  
@@ -260,6 +263,22 @@ navlinks.forEach(link => {
 });
 
 
+/// MODAL 
+
+const modal = document.getElementById("modal");
+modal.addEventListener ('click', CloseModal);
+
+function CloseModal (e)
+{
+
+    if ((e.target === document.querySelector("#modal"))||(e.target === document.querySelector(".close")))
+    {
+        
+        const modal = document.querySelector("#modal");
+        modal.classList.add('hidden');
+        
+    }
+}
 
 
 
