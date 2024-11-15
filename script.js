@@ -136,7 +136,7 @@ fetchSkills().then(data => {
 // Variable pour stocker les projets
 let projetsData = [];
 
-/// Récupération et affichage des projets
+/// Récupération et stockage des projets
 async function fetchProjets() {
     try {
         const reponse = await fetch('data/projets.json');
@@ -150,6 +150,7 @@ async function fetchProjets() {
     }
 }
 
+// Affichage des projets
 fetchProjets().then(data => {
     const parent = document.getElementById("projets-content");
 
@@ -172,7 +173,8 @@ fetchProjets().then(data => {
     }
 });
 
-// Fonction pour ouvrir les projets et récupérer les informations... puis les injecter dans une modale
+
+// Fonction recuperer le projet (dans projetsData) cliqué... puis l'injecter dans une modale
 const openProjet = (event) => {
     
     const clickedId = event.target.id.replace("btn_projet_", "");
