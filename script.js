@@ -132,7 +132,53 @@ fetchSkills().then(data => {
 });
 
 
+
 ///Récupation et affichage des projets
+
+async function fetchProjets() {
+    try {
+        const reponse = await fetch('data/projets.json');
+        const projets = await reponse.json(); 
+        return projets
+    } catch (error) {
+        console.error('Erreur de récupération JSON:', error);
+        return []; 
+    }
+}
+
+fetchProjets().then(data => {
+    
+    for (let i = 0; i < data["Projets"].length; i++) {
+
+    const parent = document.getElementById("projets-content");
+    const newDiv = document.createElement("div");
+    newDiv.id = "projet_"+data["Projets"][i].id;
+    newDiv.className = "projet";
+    newDiv.innerHTML = 
+        `<img src="${data["Projets"][i].img}" alt="${data["Projets"][i].alt}">
+        <div class="projet-layer">
+        <h1>${data["Projets"][i].nom}</h1>
+        <p>${data["Projets"][i].description}</p>
+        <a href="#"><i class='bx bx-link-external'></i></a>
+        </div>`;
+    parent.appendChild(newDiv);
+
+    
+
+    }
+
+
+});
+
+
+
+
+
+
+
+
+
+
 
 
 
