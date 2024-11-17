@@ -763,8 +763,20 @@ button:hover{
 
 
 .carre{
+    width: 100%;
+    height: 100%;
     border-radius: 10px;
     transition: 0.3s ease;
+    overflow: hidden; /* Empêche les débordements */
+    border: 1px solid rgba(0, 0, 0, 0.596);
+    filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.7));
+    -webkit-filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.7));
+}
+
+.carre img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     
 }
 
@@ -772,17 +784,53 @@ button:hover{
 .carre:hover {
     
     transform: scale(1.07);
-    border: 1px solid red;
+    
 }
 .titre_projet
 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: 600;
     color: red;
 }
 
 .descritption_projet {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
+    text-align: justify;
+    margin-bottom: 10px;
+    
+}
+
+.descritption_icon {
+    font-size: 4rem;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+    width: 100%;
+    
+}
+
+.link{
+    cursor: pointer;
+    }
+
+.link i:hover{
+    color: red;
+    transition: 0.3s ease;
+}
+
+.link i:hover {
+    
+    transform: scale(1.1);
+    
+}
+
+.link a {
+    color: inherit; /* Hérite de la couleur parent */
+    text-decoration: none; /* Supprime le soulignement */
+}
+
+.link a:visited {
+    color: inherit; /* Même couleur que les liens normaux */
 }
 
 
