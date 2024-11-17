@@ -95,7 +95,7 @@ body{
 
 section{
     min-height: 100vh;
-    padding: 10rem 9% 10rem;
+    padding: 12rem 9% 12rem;
     
 }
 
@@ -234,6 +234,12 @@ margin-top: 170px;
 
 
 /* COMPETENCES*/
+
+.myskills{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
 
 .skills{
@@ -465,7 +471,7 @@ margin-top: 170px;
     flex-direction: column;
     text-align: center;
     transform: translateY(100%);
-    transition: 0.3s ease;
+    transition: 0.5s ease;
     
 }
 
@@ -525,7 +531,7 @@ margin-top: 170px;
 form {
     width: 800px;
     padding: 20px;
-    margin-top: 20px;
+    
     
     
 }
@@ -538,7 +544,7 @@ label {
 input[type="email"], input[type="text"], textarea {
     width: 100%;
     padding: 5px;
-    margin: 10px 0 20px 0;
+    margin: 10px 0 10px 0;
     font-size: 1.2rem;
     border: 2px solid red;
     border-radius: 10px;
@@ -550,7 +556,7 @@ input[type="email"], input[type="text"], textarea {
 #contacter{
     font-size: 30px;
     font-weight: 600;
-    margin-bottom: 10px;
+    
     
 }
 
@@ -609,6 +615,8 @@ button{
     transition: 0.3s ease;
     cursor: pointer;
     border: 2px solid transparent;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 button:hover{
@@ -659,12 +667,12 @@ button:hover{
 	justify-content: center;
 	background-color: white;
     padding: 20px;
-    width: 70%;
-    height: 70%;
+    width: 60%;
+    height: auto;
     border-radius: 10px;
 	box-sizing: border-box;
     border: 2px solid red;
-
+    
     transform: translateY(-50px);
     opacity: 0;
     animation: none;
@@ -719,11 +727,11 @@ button:hover{
 .cadre {
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
-	align-items: center;
+    justify-content: space-between;
+    align-items: flex-start;
 	height: 100%;
-	width: 420px;
-	gap: 50px;
+	width: 100%;
+	gap: 10px;
 	
 }
 
@@ -744,6 +752,40 @@ button:hover{
 	
     transform: scale(1.2);
 }
+
+.carre_content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    height: 200px;
+    width: 100%;
+}
+
+
+.carre{
+    border-radius: 10px;
+    transition: 0.3s ease;
+    
+}
+
+
+.carre:hover {
+    
+    transform: scale(1.07);
+    border: 1px solid red;
+}
+.titre_projet
+{
+    font-size: 2rem;
+    font-weight: 600;
+    color: red;
+}
+
+.descritption_projet {
+    font-size: 1.5rem;
+}
+
+
 
 
 
