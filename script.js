@@ -17,7 +17,7 @@ fetchSkills().then(data => {
     /// Skills Frontend /////
     for (let i = 0; i < data["Frontend"].length; i++) {
     
-    const parent = document.getElementById("linearskills");
+    const parent = document.getElementById("frontend");
 
     const newDiv = document.createElement("div");
     newDiv.id = "front_"+data["Frontend"][i].id;
@@ -62,7 +62,7 @@ fetchSkills().then(data => {
     
     for (let i = 0; i < data["Backend"].length; i++) {
 
-        const parent = document.getElementById("linearskills");
+        const parent = document.getElementById("backend");
         const newDiv = document.createElement("div");
         newDiv.id = "back_"+data["Backend"][i].id;
         newDiv.innerHTML = `${data["Backend"][i].icon}`;
@@ -181,7 +181,7 @@ const openProjet = (event) => {
     const projet = projetsData.find(projet => projet.id == clickedId);
 
     const modal = document.getElementById("modal");
-    modal.classList.remove('hidden');
+    modal.classList.add('show');
     
     // Afficher l'id
     //console.log('Nom du projet :', projet.id);
@@ -275,7 +275,8 @@ function CloseModal (e)
     {
         
         const modal = document.querySelector("#modal");
-        modal.classList.add('hidden');
+        modal.classList.remove('show');
+        
         
     }
 }

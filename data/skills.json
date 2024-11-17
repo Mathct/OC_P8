@@ -16,13 +16,20 @@
     },
     {
         "id": 3,
+        "nom": "Sass",
+        "niveau": 95,
+        "icon": "<i class='bx bxl-sass'></i>",
+        "color": "#cd6799"
+    },
+    {
+        "id": 4,
         "nom": "Javascrit",
         "niveau": 95,
         "icon": "<i class='bx bxl-javascript'></i>",
         "color": "#f8db1d"
     },
     {
-        "id": 4,
+        "id": 5,
         "nom": "React",
         "niveau": 70,
         "icon": "<i class='bx bxl-react' ></i>",
@@ -62,6 +69,14 @@
         "niveau": 70,
         "icon": "<i class='bx bxl-mongodb'></i>",
         "color": "#90EE90"
+    },
+
+    {
+        "id": 5,
+        "nom": "C++",
+        "niveau": 60,
+        "icon": "<i class='bx bxl-c-plus-plus' ></i>",
+        "color": "#0080cd"
     }
 
    
