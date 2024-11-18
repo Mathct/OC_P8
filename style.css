@@ -139,7 +139,7 @@ margin-top: 170px;
 }
 
 .home-content h1{
-    font-size: 6rem;
+    font-size: 5rem;
     font-weight: 700;
     line-height: 1;
 }
@@ -148,7 +148,8 @@ margin-top: 170px;
     border-radius: 50%;
     position: relative;
     top: 1rem;
-    width: 16vw;
+    /*width: 16vw;*/
+    width: 300px;
  
         
 }
@@ -654,7 +655,7 @@ button:hover{
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.8);
-
+    overflow-y: auto;
     opacity: 0;
     visibility: hidden;
     transition: opacity 1s ease, visibility 0.7s ease;
@@ -673,9 +674,9 @@ button:hover{
 	box-sizing: border-box;
     border: 2px solid red;
     
+    
     transform: translateY(-50px);
     opacity: 0;
-    animation: none;
     transition: transform 1s ease, opacity 1s ease;
 
     
@@ -728,7 +729,7 @@ button:hover{
 	display: flex;
 	flex-direction: column;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
 	height: 100%;
 	width: 100%;
 	gap: 10px;
@@ -827,55 +828,5 @@ button:hover{
 .link a:visited {
     color: inherit; /* Même couleur que les liens normaux */
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media(max-width:890px){
-
-    #menu-icon{
-        display: block;
-    }
-
-    .navbar{
-        position: absolute;
-        top: 100%;
-        right: 0px;
-        width: 100%;
-        background: black;
-        /*display: flex;*/
-        flex-direction: column;
-        align-items: center;
-        display: none;
-        
-    }
-
-    .navbar.show {
-        display: flex;
-    }
-
-    .navbar a {
-        margin-left: 0;
-    }
-
-
-}
-
-
-
-
-
 
 
