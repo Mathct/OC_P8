@@ -11,7 +11,7 @@
         "id": 2,
         "nom": "CSS 3",
         "niveau": 95,
-        "icon": "<i class='bx bxl-css3' ></i>",
+        "icon": "<i class='bx bxl-css3'></i>",
         "color": "#147bbc"
     },
     {

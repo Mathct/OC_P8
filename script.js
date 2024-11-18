@@ -136,7 +136,7 @@ fetchSkills().then(data => {
 // Variable pour stocker les projets
 let projetsData = [];
 
-/// Récupération et stockage des projets
+/// Récupération et stockage des projets dans projetsData
 async function fetchProjets() {
     try {
         const reponse = await fetch('data/projets.json');
@@ -182,11 +182,57 @@ const openProjet = (event) => {
 
     const modal = document.getElementById("modal");
     modal.classList.add('show');
+
+    const parent = document.getElementById("cadre");
+    parent.innerHTML="";
+    parent.innerHTML=
+                    `<div>
+                        <div class="titre_projet"><span>${projet.nom}</span></div>
+                        <div class="descritption_projet1">${projet.description1}</div>
+                        <div class="descritption_projet2">${projet.description2}</div>
+                    </div>
+
+                    <div class="screen_content">
+                        <div class="screen"><img src="${projet.img1}" alt="${projet.alt}"></div>
+                        <div class="screen"><img src="${projet.img2}" alt="${projet.alt}"></div>
+                        <div class="screen"><img src="${projet.img3}" alt="${projet.alt}"></div>
+                    </div>
+  
+                    <div class="descritption_icons">
+                        <div id="projet_icon" class="projet_icon"></div>
+                        <div id="projet_link" class="link"></div>
+
+                    </div>`;
+
     
-    // Afficher l'id
-    //console.log('Nom du projet :', projet.id);
+
+    var parent_icon = document.getElementById("projet_icon");
+    var codeicon ="";
+    for (let i = 0; i < projet.icon_class_color.length; i++) {
+        
+        if(projet.icon_class_color[i][0]!=0)
+        {
+        const icon = `<i class="${projet.icon_class_color[i][0]}" style="color: ${projet.icon_class_color[i][1]};"></i>`
+        codeicon += icon;
+        }
+    }
+    parent_icon.innerHTML = codeicon;
+    
+
+
+    var parent_link = document.getElementById("projet_link");
+    var codelink ="";
+    if(projet.github_link[0] !=0)
+        {
+            codelink += `<a href="${projet.github_link[0]}" target="_blank"><i class='bx bxl-github'></i></a>`;
+        }
+    if(projet.github_link[1] !=0)
+        {
+            codelink += `<a href="${projet.github_link[1]}" target="_blank"><i class='bx bx-link'></i></a>`;
+        }
+    parent_link.innerHTML = codelink;
    
-    
+   
 };  
 
 

@@ -5,14 +5,29 @@
         "nom": "Booki",
         "img": "img/projet1_0.jpg",
         "alt": "Projet Booki",
-        "description": "Créez la page d'accueil d'une agence de voyage avec HTML & CSS"
+        "description": "Créez la page d'accueil d'une agence de voyage avec HTML & CSS",
+        "description1": "L'objectif du projet Booki est d'intégrer l'interface responsive du site avec du code HTML et CSS à partir des maquettes desktop, tablette et mobile réalisées sur Figma tout en respectant les specifications techniques fournies.",
+        "description2": "Le projet Booki pose les bases d'un environnement de développement performant. La création d'interfaces web responsives est cruciale dans le développement web moderne.",
+        "img1": "img/projet1_1.jpg",
+        "img2": "img/projet1_2.jpg",
+        "img3": "img/projet1_3.jpg",
+        "icon_class_color": [["bx bxl-html5", "#c95d2e"], ["bx bxl-css3", "#147bbc"]],
+        "github_link": ["https://github.com/Mathct/OC_P2","https://mathct.github.io/OC_P2"]     
+        
     },
     {
         "id": 2,
         "nom": "Sophie Bluel",
         "img": "img/projet2_0.jpg",
         "alt": "Projet Sophie",
-        "description": "Créez une page web dynamique avec JavaScript"
+        "description": "Créez une page web dynamique avec JavaScript",
+        "description1": "L'objectif du projet Bluel est de créer une page web dynamique pour le site internet d'une architecte d'intérieur en utilisant JavaScript et en communiquant avec une API pour afficher les différents travaux. Il est également prévu de créer une page de connexion pour l'administrateur du site ainsi qu'une modale permettant d'uploader de nouveaux médias.",
+        "description2": "La création de pages web dynamiques avec JavaScript, la gestion des interactions utilisateurs et la communication avec des APIs complètent les compétences attendues d'un développeur Front-End moderne.",
+        "img1": "img/projet2_1.jpg",
+        "img2": "img/projet2_2.jpg",
+        "img3": "img/projet2_3.jpg",
+        "icon_class_color": [["bx bxl-javascript", "#f8db1d"],[0,0]],
+        "github_link": ["https://github.com/Mathct/OC_P3",0] 
        
     },
     {
@@ -20,7 +35,14 @@
         "nom": "Nina Carducci",
         "img": "img/projet3_0.jpg",
         "alt": "Projet Nina",
-        "description": "Débuggez et optimisez un site de photographe"
+        "description": "Débuggez et optimisez un site de photographe",
+        "description1": "L'objectif du projet Carducci est d'identifier les problèmes de chargement et de référencement du site de Nina Carducci avec les outils LightHouse et Wave. Le code sera modifié afin d'optimiser la taille des images et de corriger les bugs.",
+        "description2": "L'optimisation du référencement (SEO) et de l'accessibilité sont des compétences cruciales dans le développement web. Elles sont essentielles pour améliorer la visibilité et l'accessibilité d'un site web, augmentant ainsi son trafic et sa portée.",
+        "img1": "img/projet3_1.jpg",
+        "img2": "img/projet3_2.jpg",
+        "img3": "img/projet3_3.jpg",
+        "icon_class_color": [["bx bxl-html5", "#c95d2e"], ["bx bxl-css3", "#147bbc"]],
+        "github_link": ["https://github.com/Mathct/OC_P4","https://mathct.github.io/OC_P4/"] 
         
     },
     {
@@ -28,7 +50,14 @@
         "nom": "Kasa",
         "img": "img/projet4_0.jpg",
         "alt": "Projet Kasa",
-        "description": "Créez une application web de location immobilière avec React"
+        "description": "Créez une application web de location immobilière avec React",
+        "description1": "L'objectif du projet Kasa est d'implémenter le front-end d’une application en utilisant React et React Router pour créer une expérience utilisateur moderne et réactive. Pour cela, on utilisera des animations css et le code sera développé en Sass.",
+        "description2": "La maîtrise de React et de React Router est essentielle dans le développement web moderne, en particulier pour la création d'applications web dynamiques et réactives. L'utilisation de SASS pour gérer le CSS et l'implémentation d’animations CSS sont également des compétences clés pour améliorer l'expérience utilisateur.",
+        "img1": "img/projet4_1.jpg",
+        "img2": "img/projet4_2.jpg",
+        "img3": "img/projet4_3.jpg",
+        "icon_class_color": [["bx bxl-react", "#61dbfb"], ["bx bxl-sass", "#cd6799"]],
+        "github_link": ["https://github.com/Mathct/kasa","https://mathct.github.io/kasa/"] 
     },
 
     {
@@ -36,7 +65,14 @@
         "nom": "Mon vieux grimoire",
         "img": "img/projet5_0.jpg",
         "alt": "Projet Grimoire",
-        "description": "Développez le back-end d'un site de notation de livres"
+        "description": "Développez le back-end d'un site de notation de livres",
+        "description1": "L'objectif du projet Mon Vieux Grimoire est de créer un serveur avec Express et de le connecter à une base de données MongoDB. Il faut développer les modèles de données et implémenter les opérations CRUD pour la gestion sécurisée des livres et des notations. Le projet comprend également la gestion du téléchargement et de l'optimisation des images, ainsi que l'ajout de fonctionnalités pour noter les livres et calculer la note moyenne.",
+        "description2": "Le développement back-end, en particulier avec Node.js, Express, et MongoDB, est essentiel pour créer des applications web modernes et performantes. La maîtrise des opérations CRUD, de la sécurité des données, et de l'authentification sont des compétences clés pour tout développeur back-end.",
+        "img1": "img/projet5_1.jpg",
+        "img2": "img/projet5_2.jpg",
+        "img3": "img/projet5_3.jpg",
+        "icon_class_color": [["bx bxl-nodejs", "#083B32"], ["bx bxl-mongodb", "#90EE90"]],
+        "github_link": ["hhttps://github.com/Mathct/backend",0] 
     },
 
     {
@@ -44,7 +80,14 @@
         "nom": "Menu Maker",
         "img": "img/projet6_0.jpg",
         "alt": "Projet Qwenta",
-        "description": "Planifiez le développement du site de votre client"
+        "description": "Planifiez le développement du site de votre client",
+        "description1": "L'objectif du projet Qwenta est la planification du développement du site web à partir de la maquette, des spécifications fonctionnelles et des User Stories du site. A partir de la veille technologique, il faut réaliser les spécifications techniques, découper le projet en tâches et réaliser un tableau Kanban sous Notion. Finalement, on présentera la solution technique.",
+        "description2": "La capacité à traduire des besoins fonctionnels en spécifications techniques et à organiser le travail de développement est essentielle pour le succès de tout projet informatique. La maîtrise des outils de veille technologique et de gestion de projet, ainsi que la capacité à présenter des solutions techniques, sont également cruciales pour un développeur agile moderne.",
+        "img1": "img/projet6_1.jpg",
+        "img2": "img/projet6_2.jpg",
+        "img3": "img/projet6_3.jpg",
+        "icon_class_color": [[0, 0], [0, 0]],
+        "github_link": [0,"https://careful-nerine-6f1.notion.site/122f5ab6aa2e803db1f9d6158c95392e?v=122f5ab6aa2e819b8de9000c3d22b904"] 
     }
 
     ]
